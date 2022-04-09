@@ -1,12 +1,12 @@
 <?php
 
-namespace InfyOm\CoreUIPreset;
+namespace Hublinkaz\CoreUIPreset;
 
 use Illuminate\Console\Command;
 use Illuminate\Container\Container;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Str;
-use InfyOm\GeneratorHelpers\LaravelUtils;
+use Hublinkaz\GeneratorHelpers\LaravelUtils;
 use Laravel\Ui\Presets\Preset;
 use Symfony\Component\Finder\SplFileInfo;
 

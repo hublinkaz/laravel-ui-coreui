@@ -1,6 +1,6 @@
 <?php
 
-namespace InfyOm\CoreUIPreset;
+namespace Hublinkaz\CoreUIPreset;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Ui\UiCommand;

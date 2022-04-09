@@ -18,7 +18,7 @@
     "require": {
         "php": "^8.0",
         "illuminate/support": "^9.0",
-        "hublinkaz/laravel-generator-helpers": "^3.0",
+        "hublinkaz/laravel-generator-helpers": "^4.0",
         "laravel/ui": "^3.0"
     },
     "autoload": {

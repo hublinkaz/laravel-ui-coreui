@@ -1,8 +1,8 @@
 <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
     <div class="c-sidebar-brand d-md-down-none">
-        <img src="https://hublink.az/public/images/media/1649489438blue_logo_150x150.png" width="46"
+        <img src="https://hublink.az/public/images/media/1649502681logo.png" width="100"
              class="c-sidebar-brand-full" alt="Brand Logo">
-        <img src="https://hublink.az/public/images/media/1649489438blue_logo_150x150.png" width="46" height="46"
+        <img src="https://hublink.az/public/images/media/1649502961logo_min.png" width="46" height="46"
              class="c-sidebar-brand-minimized" alt="Brand Logo">
     </div>
     <ul class="c-sidebar-nav">

@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "php": "^7.3",
+        "php": "^8.0",
         "illuminate/support": "^9.0",
         "hublinkaz/laravel-generator-helpers": "^3.0",
         "laravel/ui": "^3.0"

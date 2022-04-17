@@ -10,8 +10,22 @@
     <i class="c-icon c-icon-lg cil-menu"></i>
 </button>
 <ul class="c-header-nav mfs-auto">
+    <li class="c-header-nav-item dropdown">
+        <div class="dropdown">
+            <a class=" dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" href="#" role="button"
+            aria-haspopup="true" aria-expanded="false"> <i class="c-icon mfe-2 cil-globe-alt"></i></a>
+
+
+            <ul class="dropdown-menu dropdown-menu-right pt-0" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+    </li>
 </ul>
 <ul class="c-header-nav">
+
     <li class="c-header-nav-item dropdown">
         <a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button"
            aria-haspopup="true" aria-expanded="false">
@@ -19,6 +33,8 @@
                 <img class="c-avatar-img" src="https://hublink.az/public/images/media/1649489438blue_logo_150x150.png" alt="">
             </div>
         </a>
+
+
         <div class="dropdown-menu dropdown-menu-right pt-0">
             <div class="dropdown-header bg-light py-2"><strong>Account</strong></div>
             <a class="dropdown-item" href="#">

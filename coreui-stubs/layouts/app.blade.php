@@ -39,7 +39,51 @@
 
 <script src="{{ mix('js/app.js') }}" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.4.0/perfect-scrollbar.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        $(function() {
+            $(document).on('click', '.delete', function(e) {
+                e.preventDefault();
+                var link = $(this).attr("href");
+                const swalWithBootstrapButtons = Swal.mixin({
+                    customClass: {
+                        confirmButton: 'btn btn-success ml-1',
+                        cancelButton: 'btn btn-danger mr-1'
+                    },
+                    buttonsStyling: false
+                })
+                swalWithBootstrapButtons.fire({
+                    title: 'Əminsən ?',
+                    text: "Sildikən sonra geri qaytarılamaz",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonText: 'Bəli, Sil !',
+                    cancelButtonText: 'Xeyr, Silmə !',
+                    reverseButtons: true
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.href = link;
+                        swalWithBootstrapButtons.fire(
+                            'Silindi!',
+                            'Uğurla Silindi',
+                            'success'
+                        )
+                    } else if (
+                        /* Read more about handling dismissals below */
+                        result.dismiss === Swal.DismissReason.cancel
+                    ) {
+                        swalWithBootstrapButtons.fire(
+                            'Ləğv Edildi!',
+                            'Məlumatlar Güvəndədir! ;)',
+                            'error'
+                        )
+                    }
+                })
+            })
+        })
+    </script>
 @yield('third_party_scripts')
 
 @stack('page_scripts')
